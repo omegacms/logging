@@ -27,7 +27,7 @@ use RuntimeException;
  * Logging exception class.
  *
  * @category    Omega
- * @package     Framework\Logging
+ * @package     Omega\Logging
  * @subpackage  Omega\Logging\Exception
  * @link        https://omegacms.github.com
  * @author      Adriano Giovannini <omegacms@outlook.com>

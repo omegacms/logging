@@ -22,7 +22,7 @@ namespace Omega\Logging\Adapter;
  * Logging adapter interface.
  *
  * @category    Omega
- * @package     Framework\Logging
+ * @package     Omega\Logging
  * @subpackage  Omega\Logging\Adapter
  * @link        https://omegacms.github.com
  * @author      Adriano Giovannini <omegacms@outlook.com>

@@ -30,7 +30,7 @@ use Omega\ServiceProvider\ServiceProviderInterface;
  * Logging factory class.
  *
  * @category    Omega
- * @package     Framework\Logging
+ * @package     Omega\Logging
  * @link        https://omegacms.github.com
  * @author      Adriano Giovannini <omegacms@outlook.com>
  * @copyright   Copyright (c) 2022 Adriano Giovannini. (https://omegacms.github.com)

@@ -30,7 +30,7 @@ use Omega\ServiceProvider\ServiceProviderInterface;
  * Logging service provider.
  *
  * @category    Omega
- * @package     Framework\Logging
+ * @package     Omega\Logging
  * @subpackage  Omega\Logging\ServiceProvider
  * @link        https://omegacms.github.com
  * @author      Adriano Giovannini <omegacms@outlook.com>
