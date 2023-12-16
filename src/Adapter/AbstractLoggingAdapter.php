@@ -1,6 +1,6 @@
 <?php
 /**
- * Part of Banco Omega CMS -  Logging Package
+ * Part of Omega CMS -  Logging Package
  *
  * @link       https://omegacms.github.io
  * @author     Adriano Giovannini <omegacms@outlook.com>
