@@ -19,7 +19,13 @@ declare( strict_types = 1 );
 namespace Omega\Logging\Adapter;
 
 /**
- * Abstract logging adapter class..
+ * Abstract logging adapter class.
+ *
+ * The `AbstractLoggingAdapter` class is an abstract base class for logging adapters
+ * within the Omega Logging Package. It implements the `LoggingAdapterInterface`,
+ * providing a skeletal implementation of the interface's methods for logging
+ * informational, warning, and error messages. Concrete logging adapters should
+ * extend this class and provide specific implementations for each logging method.
  *
  * @category    Omega
  * @package     Omega\Logging
@@ -33,7 +39,7 @@ namespace Omega\Logging\Adapter;
 abstract class AbstractLoggingAdapter implements LoggingAdapterInterface
 {
     /**
-     * Info method.
+     * @inheritdoc
      *
      * @param  string $message Holds the message.
      * @return $this
@@ -41,7 +47,7 @@ abstract class AbstractLoggingAdapter implements LoggingAdapterInterface
     abstract public function info( string $message ) : static;
 
     /**
-     * Warning method.
+     * @inheritdoc
      *
      * @param  string $message Holds the message.
      * @return $this
@@ -49,7 +55,7 @@ abstract class AbstractLoggingAdapter implements LoggingAdapterInterface
     abstract public function warning( string $message ) : static;
 
     /**
-     * Error method.
+     * @inheritdoc
      *
      * @param  string $message Holds the message.
      * @return $this

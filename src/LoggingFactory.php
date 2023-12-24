@@ -29,6 +29,10 @@ use Omega\ServiceProvider\ServiceProviderInterface;
 /**
  * Logging factory class.
  *
+ * The `LoggingFactory` class serves as a factory for creating and managing logging drivers.
+ * It allows the registration of different logging drivers through aliases and provides
+ * a method to bootstrap and connect the appropriate driver based on the provided configuration.
+ *
  * @category    Omega
  * @package     Omega\Logging
  * @link        https://omegacms.github.io
@@ -42,12 +46,12 @@ class LoggingFactory implements ServiceProviderInterface
     /**
      * Drivers array.
      *
-     * @var array $drivers Holds an array of driver.
+     * @var array $drivers Holds an array of registered driver.
      */
     protected array $drivers;
 
     /**
-     * Add driver.
+     * @inheritdoc
      *
      * @param  string  $alias  Holds the driver alias.
      * @param  Closure $driver Holds an instance of Closure.
@@ -60,7 +64,7 @@ class LoggingFactory implements ServiceProviderInterface
     }
 
     /**
-     * Connect the driver.
+     * @inheritdoc
      *
      * @param  array $config Holds an array of configuration.
      * @return mixed

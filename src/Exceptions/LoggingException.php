@@ -26,6 +26,10 @@ use RuntimeException;
 /**
  * Logging exception class.
  *
+ * The `LoggingException` class extends the `RuntimeException` class and
+ * serves as an exception specific to the Omega Logging Package. It is thrown
+ * for logging-related errors.
+ *
  * @category    Omega
  * @package     Omega\Logging
  * @subpackage  Omega\Logging\Exception

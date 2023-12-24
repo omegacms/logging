@@ -29,6 +29,10 @@ use Omega\ServiceProvider\ServiceProviderInterface;
 /**
  * Logging service provider.
  *
+ * The `LoggingServiceProvider` class extends the `AbstractServiceProvider` and
+ * is responsible for providing logging-related services. It defines the service name,
+ * factory method, and drivers available for the logging service.
+ *
  * @category    Omega
  * @package     Omega\Logging
  * @subpackage  Omega\Logging\ServiceProvider
@@ -41,7 +45,7 @@ use Omega\ServiceProvider\ServiceProviderInterface;
 class LoggingServiceProvider extends AbstractServiceProvider
 {
     /**
-     * Get the service name.
+     * @inheritdoc
      *
      * @return string Return the service name.
      */
@@ -51,7 +55,7 @@ class LoggingServiceProvider extends AbstractServiceProvider
     }
 
     /**
-     * Get the service factory.
+     * @inheritdoc
      *
      * @return mixed
      */
@@ -61,7 +65,7 @@ class LoggingServiceProvider extends AbstractServiceProvider
     }
 
     /**
-     * Get drivers.
+     * @inheritdoc
      *
      * @return array Return an array of drivers for the service.
      */

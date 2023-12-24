@@ -21,6 +21,10 @@ namespace Omega\Logging\Adapter;
 /**
  * Logging adapter interface.
  *
+ * The `LoggingAdapterInterface` defines the contract for logging adapters
+ * that can be used with the Omega Logging Package. Implementing classes must
+ * provide methods for logging informational, warning, and error messages.
+ *
  * @category    Omega
  * @package     Omega\Logging
  * @subpackage  Omega\Logging\Adapter
@@ -33,25 +37,25 @@ namespace Omega\Logging\Adapter;
 interface LoggingAdapterInterface
 {
     /**
-     * Info method.
+     * Log informational message.
      *
-     * @param  string $message Holds the message.
+     * @param  string $message Holds the message to log.
      * @return $this
      */
     public function info( string $message ) : static;
 
     /**
-     * Warning method.
+     * Log warning message.
      *
-     * @param  string $message Holds the message.
+     * @param  string $message Holds the message to log.
      * @return $this
      */
     public function warning( string $message ) : static;
 
     /**
-     * Error method.
+     * Log error message.
      *
-     * @param  string $message Holds the message.
+     * @param  string $message Holds the message to log.
      * @return $this
      */
     public function error( string $message ) : static;

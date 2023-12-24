@@ -25,7 +25,11 @@ use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
 
 /**
- * Stream adapter class..
+ * Stream adapter class.
+ *
+ * The `StreamAdapter` class is a concrete implementation of the abstract logging adapter,
+ * providing logging functionality to a stream. It utilizes the Monolog library for
+ * handling log messages and supports logging informational, warning, and error messages.
  *
  * @category    Omega
  * @package     Omega\Logging
@@ -64,7 +68,7 @@ class StreamAdapter extends AbstractLoggingAdapter
     }
 
     /**
-     * Info method.
+     * @inheritdoc
      *
      * @param  string $message Holds the message.
      * @return $this
@@ -77,7 +81,7 @@ class StreamAdapter extends AbstractLoggingAdapter
     }
 
     /**
-     * Warning method.
+     * @inheritdoc
      *
      * @param  string $message Holds the message.
      * @return $this
@@ -90,7 +94,7 @@ class StreamAdapter extends AbstractLoggingAdapter
     }
 
     /**
-     * Error method.
+     * @inheritdoc
      *
      * @param  string $message Holds the message.
      * @return $this
@@ -103,7 +107,7 @@ class StreamAdapter extends AbstractLoggingAdapter
     }
 
     /**
-     * Error logger.
+     * Get or create the logger instance.
      *
      * @return Logger Return an instance of Logger.
      */
