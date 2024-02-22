@@ -15,7 +15,7 @@
   ],
   "require": {
     "php": ">=8.2",
-    "omegacms/serviceprovider": "^1.0.0",
+    "omegacms/service-provider": "^1.0.0",
     "monolog/monolog": "^3.3"
   },
   "require-dev": {
