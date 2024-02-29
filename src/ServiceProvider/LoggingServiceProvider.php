@@ -23,8 +23,8 @@ namespace Omega\Logging\ServiceProvider;
  */
 use Omega\Logging\LoggingFactory;
 use Omega\Logging\Adapter\StreamAdapter;
-use Omega\ServiceProvider\AbstractServiceProvider;
-use Omega\ServiceProvider\ServiceProviderInterface;
+use Omega\Container\ServiceProvider\AbstractServiceProvider;
+use Omega\Container\ServiceProvider\ServiceProviderInterface;
 
 /**
  * Logging service provider.

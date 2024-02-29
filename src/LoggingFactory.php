@@ -24,7 +24,7 @@ namespace Omega\Logging;
 use Closure;
 use Omega\Logging\Exceptions\LoggingException;
 use Omega\Logging\Adapter\LoggingAdapterInterface;
-use Omega\ServiceProvider\ServiceProviderInterface;
+use Omega\Container\ServiceProvider\ServiceProviderInterface;
 
 /**
  * Logging factory class.
