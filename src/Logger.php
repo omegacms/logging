@@ -51,7 +51,7 @@ class Logger extends AbstractLogger
         'appendContext' => true,
     ];
 
-    /**
+    /*°
      * @var string
      */
     private string $logFilePath;
